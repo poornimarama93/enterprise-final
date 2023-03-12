@@ -1,6 +1,7 @@
 ---
 spring:
-  config.activate.on-profile: cloud
+  profiles:
+    active: "cloud"
 cds:
   datasource:
     auto-config.enabled: false

@@ -1,0 +1,13 @@
+---
+spring:
+  profiles:
+    active: default
+cds:
+  datasource:
+    auto-config.enabled: false
+  messaging.services:
+    messaging-em:
+      name: "messaging"
+      kind: "enterprise-messaging"
+      publishPrefix: '$namespace/'
+      subscribePrefix: '$namespace/'

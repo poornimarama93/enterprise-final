@@ -1,11 +1,14 @@
 ---
 spring:
   profiles:
-    active: "cloud"
+    active: default
 cds:
   datasource:
     auto-config.enabled: false
-  messaging:
-    services:
-      - name: "taskmanager-events"
-        kind: "enterprise-messaging"
+  messaging.services:
+    messaging-em:
+      name: "messaging"
+      kind: "enterprise-messaging"
+      publishPrefix: '$namespace/'
+      subscribePrefix: '$namespace/'
+statu

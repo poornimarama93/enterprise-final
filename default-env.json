@@ -1,0 +1,10 @@
+{
+    "VCAP_SERVICES" : {
+        "enterprise-messaging": [{
+            "label": "enterprise-messaging",
+            "credentials": {
+             !-- <add your credentails>
+          }
+            }]
+  }
+}

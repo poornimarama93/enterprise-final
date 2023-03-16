@@ -1,0 +1,33 @@
+{
+  "namespace": "toadslop.bookshop",
+  "definitions": {
+    "toadslop.bookshop.User": {
+      "kind": "entity",
+      "elements": {
+        "name": {
+          "type": "cds.String"
+        }
+      }
+    },
+    "say": {
+      "@source": "say.cds",
+      "kind": "service"
+    },
+    "say.hello": {
+      "kind": "function",
+      "params": {
+        "to": {
+          "type": "cds.String"
+        }
+      },
+      "returns": {
+        "type": "cds.String"
+      }
+    }
+  },
+  "$version": "2.0",
+  "meta": {
+    "creator": "CDS Compiler v3.4.0",
+    "flavor": "inferred"
+  }
+}

@@ -11,4 +11,3 @@ cds:
       kind: "enterprise-messaging"
       publishPrefix: '$namespace/'
       subscribePrefix: '$namespace/'
-statu

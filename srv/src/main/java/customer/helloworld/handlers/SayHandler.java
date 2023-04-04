@@ -17,15 +17,12 @@ import com.sap.cds.services.messaging.MessagingService;
 @ServiceName(Say_.CDS_NAME)
 public class SayHandler implements EventHandler {
 
-    @Autowired
-	@Qualifier("taskmanager-events")
-	MessagingService messagingService;
     
 @On(event = HelloContext.CDS_NAME)
   public void sayHello(HelloContext context) {
     String name = context.getTo();
   String greeting = "Hello " + name + "!";
-  messagingService.emit("sap/taskmanager-events/event-mesh/user-registration-topic", greeting);
+  //messagingService.emit("sap/taskmanager-events/event-mesh/user-registration-topic", greeting);
   context.setResult(greeting);
   }
 }
